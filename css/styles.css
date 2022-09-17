@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--background-text-color);
+    background-color: var(--background-text-color); 
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -23,7 +23,6 @@ body {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    margin-top: 24px;
 }
 
 .logo-footer {
@@ -32,11 +31,6 @@ body {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-}
-
-.page-footer {
-    background-color: var(--address-backgroud-color);
-    margin-top: 60px;
 }
 
 .halflogo {
@@ -57,7 +51,7 @@ body {
 }
 
 .navigation li {
-    margin-right: 50px;
+    margin-right: 50px;            /* Студія - Портфоліо - Контакти */
 }
 
 .navigation .link {
@@ -66,35 +60,31 @@ body {
     display: block;
 }
 
-.navigation :last-child {
-    margin-right: 0;
-}
 
-.navigation .link:hover,
-.navigation .link:focus {
-    color: var(--interactive-color);
-}
 
 .link.current {
     color: var(--interactive-color);
 }
 
 .list {
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-left: 0; /*!!!!!!*/
 }
 
 .contacts-header {
     color: var(--secondary-text-color);
     letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.14;
     text-decoration: none;
 }
 
-.list .contacts-header {
-    display: block;
+.listcontactsheaderone {
+    margin-left: 344px;
+    margin-right: 50px;
+}
+
+.listcontactsheadertwo {
+    margin-right: 15px;
 }
 
 .contacts-header:hover,
@@ -137,58 +127,33 @@ body {
     color: var(--background-text-color);
 }
 
-.section-one {
-    background-color: var(--address-backgroud-color);
-    text-align: center;
-}
-
 .main-title {
     color: var(--logo-color-footer);
     letter-spacing: 0.06em;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     font-weight: 900;
-    margin-top: 200px;
-    margin-bottom: 0;
+    text-align: center;
 } 
 
 .third-title {
     color: var(--primary-text-color);
     font-weight: 700;
     line-height: 1.14;
-    text-align: center;
-    margin-top: 0;
     margin-bottom: 10px;
     font-size: 14px;
-
 }
 
-.section-two .pluses {
+.section .pluses {
     color: var(--secondary-text-color);
     line-height: 1.71;
-    text-align: center;
-    margin: 0;
-}
-
-.section-three {
-    color: var(--primary-text-color);
-    text-align: center;
-    padding-bottom: 94px;
 }
 
 .four-title {
     font-size: 36px;
     line-height: 1.16;
     font-weight: 700;
-    margin-top: 0;
     margin-bottom: 50px;
-}
-
-.section-four {
-    text-align: center;
-    background-color: var(--background-section-color);
-    margin-top: 0;
 }
 
 .five-title {
@@ -196,11 +161,10 @@ body {
     color: var(--primary-text-color);
     font-size: 36px;
     line-height: 1.16;
-    margin-top: 0;
     margin-bottom: 50px;
 }
 
-.section-four .name {
+.section .name {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -208,38 +172,33 @@ body {
     margin-top: 30px;
 }
 
-.section-four .profession {
+.section .profession {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
     margin-top: 10px;
-    margin-bottom: 30;
+    margin-bottom: 30px;
 }
 
-.section-five {
-    text-decoration: none;
-}
-
-.section-five .project {
+.section .project {
     color: var(--primary-text-color);
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    margin-top: 20px;
 }
 
-.section-five .kind {
+.section .kind {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 4px;
+    margin-bottom: 20px;
 }
 
 .address {
-    color: var(--background-text-color);
-    line-height: 1.71;
-    background-color: var(--address-backgroud-color);
     font-style: normal;
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .contacts-footer {
@@ -253,7 +212,7 @@ body {
 }
 
 .address .list .link {
-    color: var(--background-text-color);
+    color: var(--background-text-color); 
 }
 
 .link {
@@ -277,25 +236,306 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 1200px;
-    outline: 2px solid greenyellow;
+    
     }
 
-    .section-two, .section-four, .section-five {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: purple;
+    text-align: center;
+    text-decoration: none;
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        margin-top: 0;
-        margin-bottom: 0;
+.main {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: purple;
+    text-align: center;
+    text-decoration: none;
     }
 
-    p {
-        margin-top: 0;
-        margin-bottom: 0;
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
     }
 
-    ul {
-        margin-top: 0;
-        margin-bottom: 0;
-    }    
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer {
+    display: block;
+    margin-left: 15px;
+}
+
+.second {
+    text-align:left;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+/* Секция 2 (РАСПОЛОЖЕНИЕ)*/
+
+.divsectiontwo {
+    width: 1200px;
+    outline: 2px solid rgb(229, 255, 0);
+}
+
+.ulsectiontwo {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lisectiontwo {
+    width: 270px;
+    margin-right: 30px;
+    list-style: none;
+    background-color: #EEEEEE;
+    text-align: left;
+}
+
+.lisectiontwo:last-child {
+    margin-right: 0;
+}
+
+.lisectiontwo:first-child {
+    margin-left: 0;
+}
+
+.two {
+    padding-bottom: 0;
+}
+
+/* Секция 3 (РАСПОЛОЖЕНИЕ)*/
+
+.divsectionthree {
+    width: 1200px;
+    outline: 2px solid rgb(229, 255, 0);
+    padding-bottom: 30px;
+}
+
+.ulsectionthree {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lisectionthree {
+    margin-right: 30px;
+    background-color: #EEEEEE;
+    text-align: left;
+}
+
+.lisectionthree:last-child {
+    margin-right: 0;
+}
+
+.lisectionthree:first-child {
+    margin-left: 0;
+}
+
+.three {
+    padding-bottom: 0;
+}
+
+/* Секция 4 (РАСПОЛОЖЕНИЕ)*/
+
+.divsectionfour {
+    width: 1200px;
+    outline: 2px solid rgb(229, 255, 0);
+}
+
+.ulsectionfour {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+.lisectionfour {
+    margin-right: 30px;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.lisectionfour:last-child {
+    margin-right: 0;
+}
+
+.lisectionfour:first-child {
+    margin-left: 0;
+}
+
+/* СЕКЦИЯ 5 Кнопки (РАСПОЛОЖЕНИЕ) */
+
+.divbuttonfive {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid rgb(229, 255, 0);
+}
+
+.ulbuttonfive {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.libuttonfive {
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+
+.libuttonfive:last-child {
+    margin-right: 298px;
+}
+
+.libuttonfive:first-child {
+    margin-left: 297px;
+}
+
+/* Секция 5 (Портфолио) */
+
+.divfiltrfive {                     /* !!! ИДЕАЛ НАЧАЛО !!! */
+    width: 1200px;                  /* В случае изменения ширины макета меняем ширину в divfive и container, узнаем кол-во и размер отступов (формула) + плюс кол-во елементов в строке */
+    padding-left: 15px;             
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid rgb(229, 255, 0);
+}
+
+.ulfive {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lifive {
+    width: calc((100% - 2 * 30px) / 3);
+    background-color: #EEEEEE;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.lifive:nth-child(3n) {
+    margin-right: 0;
+}
+
+.lifive:nth-last-child(-n + 3) {                    /* !!! ИДЕАЛ КОНЕЦ !!! */                                    
+    margin-bottom: 0;
+}
+
+/* ФУТЕР */
+
+.divfooter {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid rgb(229, 255, 0);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    background-color: var(--address-backgroud-color);
+}
+
+.ulfooter {
+    display: block;
+    flex-wrap: wrap;
+}
+
+.lifooter {
+    margin-bottom: 9px;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.addresslink {
+    color:#FFFFFF;
+}
+
+/* ГЛАВНАЯ СЕКЦИЯ */
+
+.divmainsection {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid rgb(229, 255, 0); */
+    padding-top: 200px;
+}
+
+/* ХЕДЕР */
+
+.divheader {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   /* outline: 2px solid rgb(229, 255, 0); */
+    display: flex;
+    align-items: center;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    margin: auto;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.navfooter { 
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.ulnavigationone {
+    display: flex;
+    list-style: none;
+    margin-left: 93px;  
+}
+
+.linavigationone {
+    margin-right: 50px;
+}
+
+.ulnavigationone a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    color: var(--primary-text-color);
+}
+
+.linavigationone:last-child {
+    margin-right: 344px;
+}
+
+.linavigationone:first-child {
+    margin-left: -40px;
+}
+
+.ulnavigationtwo {
+    display: flex 
+}
+
+.linavigationtwo {
+    list-style: none;
+}
+
+.linavigationtwo:last-child {
+    margin-left: 50px;
+}
+
+.linavigationtwo:first-child {
+    margin-left: -40px;
+}
+
+.ulnavigationone .link:hover,
+.ulnavigationone .link:focus {
+    color: var(--interactive-color);
+}
