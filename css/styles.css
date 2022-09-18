@@ -1,142 +1,186 @@
+/*  ГЛАВНОЕ */
+
 :root {
     --primary-text-color: #212121;
     --interactive-color: #2196F3;
     --secondary-text-color: #757575;
     --background-text-color: #FFFFFF;
     --logo-color-header: #000000;
-    --logo-color-footer: #FFFFFF;
-    --address-backgroud-color: #2F303A;
+    --footer-backgroud-color: #2F303A;
     --background-section-color: #F5F4FA;
+    --border-color: #EEEEEE;
 }
 
 body {
-    background-color: var(--background-text-color); 
+    background-color: var(--background-text-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
 
-.logo-header {
-    color: var(--logo-color-header);
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    text-align: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-text-color)
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.logo-footer {
-    color: var(--logo-color-footer);
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-}
+/* ЛОГОТИП */
 
 .halflogo {
     color: var(--interactive-color);
 }
 
-.navigation .link {
-    color: var(--primary-text-color);
+.logo {
+    color: var(--logo-color-header);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.footer {
+    color: var(--background-text-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* ХЕДЕР */
+
+.divheader {
+    display: flex;
+    color: var(--secondary-text-color);
     letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.14;
-    text-decoration: none;
+    border-bottom: 1px solid #ECECEC;
 }
 
-.navigation {
+.navfooter {
     display: flex;
-    padding-left: 0;
+    align-items: center;
 }
 
-.navigation li {
-    margin-right: 50px;            /* Студія - Портфоліо - Контакти */
-}
-
-.navigation .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-}
-
-
-
-.link.current {
-    color: var(--interactive-color);
-}
-
-.list {
+.ulnavigationone {
     display: flex;
     list-style: none;
-    padding-left: 0; /*!!!!!!*/
+    margin-left: 93px;
 }
 
-.contacts-header {
-    color: var(--secondary-text-color);
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
-.listcontactsheaderone {
-    margin-left: 344px;
+.linavigationone {
     margin-right: 50px;
 }
 
-.listcontactsheadertwo {
-    margin-right: 15px;
+.ulnavigationone a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    color: var(--primary-text-color);
 }
 
-.contacts-header:hover,
-.contacts-header:focus {
+.linavigationone:last-child {
+    margin-right: 344px;
+}
+
+.linavigationone:first-child {
+    margin-left: -40px;
+}
+
+.ulnavigationtwo {
+    display: flex;
+    list-style: none;
+}
+
+.linavigationtwo:last-child {
+    margin-left: 50px;
+}
+
+.linavigationtwo:first-child {
+    margin-left: -40px;
+}
+
+.ulnavigationone .link:hover,
+.ulnavigationone .link:focus {
     color: var(--interactive-color);
 }
 
-.button-primary {
-    color: var(--background-text-color);
-    background-color: var(--interactive-color);
-    letter-spacing: 0.06em;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 130px;
-    border: 0 solid transparent;
-    margin-top: 30px;
-    margin-bottom: 200px;
+/* ГЛАВНАЯ СЕКЦИЯ */
+
+.divmainsection {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.button-secondary {
-    font-family: inherit;
-    color: var(--primary-text-color);
-    background-color: var(--background-section-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 6px 22px;
-    border: 0 solid transparent;
-}       
-
-.button-secondary:hover,
-.button-secondary:focus {
-    background-color: var(--interactive-color);
-    color: var(--background-text-color);
+.main {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--footer-backgroud-color)
 }
 
 .main-title {
-    color: var(--logo-color-footer);
+    color: var(--background-text-color);
     letter-spacing: 0.06em;
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
-    text-align: center;
-} 
+}
 
-.third-title {
+/* Секция 2 */
+
+.ulsectiontwo {
+    display: flex;
+    padding: initial;
+}
+
+.lisectiontwo {
+    width: 270px;
+    margin-right: 30px;
+    list-style: none;
+    background-color: var(--background-text-color);
+    text-align: left;
+}
+
+.lisectiontwo:last-child {
+    margin-right: 0;
+}
+
+.lisectiontwo:first-child {
+    margin-left: 0;
+}
+
+.two {
+    padding-bottom: 0;
+}
+
+.titletwosection {
     color: var(--primary-text-color);
     font-weight: 700;
     line-height: 1.14;
@@ -149,14 +193,62 @@ body {
     line-height: 1.71;
 }
 
-.four-title {
+/* Секция 3 */
+
+.divsectionthree {
+    padding-bottom: 30px;
+}
+
+.ulsectionthree {
+    display: flex;
+    padding: initial;
+    list-style: none;
+}
+
+.lisectionthree {
+    margin-right: 30px;
+    background-color: var(--border-color)
+}
+
+.lisectionthree:last-child {
+    margin-right: 0;
+}
+
+.three {
+    padding-bottom: 0;
+}
+
+.titlesectionthree {
     font-size: 36px;
     line-height: 1.16;
     font-weight: 700;
     margin-bottom: 50px;
 }
 
-.five-title {
+/* Секция 4 */
+
+.divsectionfour {
+    background-color: var(--background-section-color)
+}
+
+.ulsectionfour {
+    display: flex;
+    padding: initial;
+    list-style: none;
+}
+
+.lisectionfour {
+    margin-right: 30px;
+    background-color: var(--background-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.lisectionfour:last-child {
+    margin-right: 0;
+}
+
+.titlexectionfour {
     font-weight: 700;
     color: var(--primary-text-color);
     font-size: 36px;
@@ -180,212 +272,12 @@ body {
     margin-bottom: 30px;
 }
 
-.section .project {
-    color: var(--primary-text-color);
-    font-size: 18px;
-    line-height: 2.0;
-    letter-spacing: 0.06em;
-    margin-top: 20px;
-}
-
-.section .kind {
-    color: var(--secondary-text-color);
-    font-size: 16px;
-    line-height: 1.88;
-    margin-top: 4px;
-    margin-bottom: 20px;
-}
-
-.address {
-    font-style: normal;
-    margin-top: 20px;
-}
-
-.contacts-footer {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-}
-
-.contacts-footer:hover,
-.contacts-footer:focus {
-    color: var(--interactive-color);
-}
-
-.address .list .link {
-    color: var(--background-text-color); 
-}
-
-.link {
-    text-decoration: none;
-}
-
-.hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-    }
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 1200px;
-    
-    }
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: purple;
-    text-align: center;
-    text-decoration: none;
-    }
-
-.main {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: purple;
-    text-align: center;
-    text-decoration: none;
-    }
-
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    }
-
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-    }
-
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.footer {
-    display: block;
-    margin-left: 15px;
-}
-
-.second {
-    text-align:left;
-    margin-left: 15px;
-    margin-right: 30px;
-}
-
-/* Секция 2 (РАСПОЛОЖЕНИЕ)*/
-
-.divsectiontwo {
-    width: 1200px;
-    outline: 2px solid rgb(229, 255, 0);
-}
-
-.ulsectiontwo {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.lisectiontwo {
-    width: 270px;
-    margin-right: 30px;
-    list-style: none;
-    background-color: #EEEEEE;
-    text-align: left;
-}
-
-.lisectiontwo:last-child {
-    margin-right: 0;
-}
-
-.lisectiontwo:first-child {
-    margin-left: 0;
-}
-
-.two {
-    padding-bottom: 0;
-}
-
-/* Секция 3 (РАСПОЛОЖЕНИЕ)*/
-
-.divsectionthree {
-    width: 1200px;
-    outline: 2px solid rgb(229, 255, 0);
-    padding-bottom: 30px;
-}
-
-.ulsectionthree {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.lisectionthree {
-    margin-right: 30px;
-    background-color: #EEEEEE;
-    text-align: left;
-}
-
-.lisectionthree:last-child {
-    margin-right: 0;
-}
-
-.lisectionthree:first-child {
-    margin-left: 0;
-}
-
-.three {
-    padding-bottom: 0;
-}
-
-/* Секция 4 (РАСПОЛОЖЕНИЕ)*/
-
-.divsectionfour {
-    width: 1200px;
-    outline: 2px solid rgb(229, 255, 0);
-}
-
-.ulsectionfour {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    list-style: none;
-}
-
-.lisectionfour {
-    margin-right: 30px;
-    background-color: #EEEEEE;
-    text-align: center;
-}
-
-.lisectionfour:last-child {
-    margin-right: 0;
-}
-
-.lisectionfour:first-child {
-    margin-left: 0;
-}
-
-/* СЕКЦИЯ 5 Кнопки (РАСПОЛОЖЕНИЕ) */
-
-.divbuttonfive {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid rgb(229, 255, 0);
-}
+/* СЕКЦИЯ 5 (Кнопки) */
 
 .ulbuttonfive {
     display: flex;
-    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
 }
 
 .libuttonfive {
@@ -403,23 +295,17 @@ ul {
 
 /* Секция 5 (Портфолио) */
 
-.divfiltrfive {                     /* !!! ИДЕАЛ НАЧАЛО !!! */
-    width: 1200px;                  /* В случае изменения ширины макета меняем ширину в divfive и container, узнаем кол-во и размер отступов (формула) + плюс кол-во елементов в строке */
-    padding-left: 15px;             
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid rgb(229, 255, 0);
-}
 
-.ulfive {
-    display: flex;
+.ulfive {                    /* !!! ИДЕАЛ НАЧАЛО !!! */
+    display: flex;          /* В случае изменения ширины макета меняем ширину в divfive и container, узнаем кол-во и размер отступов (формула) + плюс кол-во елементов в строке */
     flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
 }
 
 .lifive {
     width: calc((100% - 2 * 30px) / 3);
-    background-color: #EEEEEE;
+    background-color: var(--background-text-color);
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -432,110 +318,140 @@ ul {
     margin-bottom: 0;
 }
 
+.section .project {
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    padding-top:  20px;
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+.section .kind {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    padding-top: 4px;
+    padding-bottom: 20px;
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
 /* ФУТЕР */
 
 .divfooter {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid rgb(229, 255, 0);
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 60px;
-    background-color: var(--address-backgroud-color);
+    background-color: var(--footer-backgroud-color);
+    text-align: left;
 }
 
 .ulfooter {
     display: block;
     flex-wrap: wrap;
+    padding: initial;
 }
 
 .lifooter {
     margin-bottom: 9px;
     list-style: none;
-    margin-left: -40px;
+}
+
+.lifooter:last-child{
+    padding-bottom: 0;
 }
 
 .addresslink {
     color:#FFFFFF;
 }
 
-/* ГЛАВНАЯ СЕКЦИЯ */
-
-.divmainsection {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 2px solid rgb(229, 255, 0); */
-    padding-top: 200px;
+.address {
+    font-style: normal;
+    margin-top: 20px;
 }
 
-/* ХЕДЕР */
+/* ПОДСВЕТКА АКТИВНОГО СЕГМЕНТА НАВИГАЦИИ*/
 
-.divheader {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   /* outline: 2px solid rgb(229, 255, 0); */
-    display: flex;
-    align-items: center;
+.link.current {
+    color: var(--interactive-color);
+}
+
+/* КОНТАКТЫ */
+
+.contacts-header {
     color: var(--secondary-text-color);
     letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.14;
     text-decoration: none;
-    margin: auto;
-    border-bottom: 1px solid #ECECEC;
 }
 
-.navfooter { 
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
-.ulnavigationone {
-    display: flex;
-    list-style: none;
-    margin-left: 93px;  
-}
-
-.linavigationone {
-    margin-right: 50px;
-}
-
-.ulnavigationone a {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-    color: var(--primary-text-color);
-}
-
-.linavigationone:last-child {
-    margin-right: 344px;
-}
-
-.linavigationone:first-child {
-    margin-left: -40px;
-}
-
-.ulnavigationtwo {
-    display: flex 
-}
-
-.linavigationtwo {
-    list-style: none;
-}
-
-.linavigationtwo:last-child {
-    margin-left: 50px;
-}
-
-.linavigationtwo:first-child {
-    margin-left: -40px;
-}
-
-.ulnavigationone .link:hover,
-.ulnavigationone .link:focus {
+.contacts-header:hover,
+.contacts-header:focus {
     color: var(--interactive-color);
+}
+
+.contacts-footer {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+/* КНОПКИ */
+
+.button-primary {
+    color: var(--background-text-color);
+    background-color: var(--interactive-color);
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 130px;
+    border: 0 solid transparent;
+    margin-top: 30px;
+}
+
+.button-primary:hover,
+.button-secondary:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--interactive-color);
+}
+
+.button-secondary {
+    font-family: inherit;
+    color: var(--primary-text-color);
+    background-color: var(--background-section-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0 solid transparent;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    background-color: var(--interactive-color);
+    color: var(--background-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* СПРЯТАННЫЙ ЕЛЕМЕНТ */ 
+
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
