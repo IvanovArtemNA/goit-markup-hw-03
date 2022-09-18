@@ -23,8 +23,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 1200px;
-    text-align: center;
-    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
     }
@@ -32,8 +30,8 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--background-text-color)
-    }
+    background-color: var(--background-section-color);
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
@@ -46,8 +44,9 @@ p {
     }
 
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 /* ЛОГОТИП */
@@ -75,13 +74,17 @@ ul {
 
 /* ХЕДЕР */
 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .divheader {
     display: flex;
     color: var(--secondary-text-color);
     letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.14;
-    border-bottom: 1px solid #ECECEC;
+    align-items: center;
 }
 
 .navfooter {
@@ -91,12 +94,8 @@ ul {
 
 .ulnavigationone {
     display: flex;
-    list-style: none;
     margin-left: 93px;
-}
-
-.linavigationone {
-    margin-right: 50px;
+    gap: 50px;
 }
 
 .ulnavigationone a {
@@ -106,25 +105,14 @@ ul {
     color: var(--primary-text-color);
 }
 
-.linavigationone:last-child {
-    margin-right: 344px;
-}
-
-.linavigationone:first-child {
-    margin-left: -40px;
-}
-
 .ulnavigationtwo {
     display: flex;
     list-style: none;
+    margin-left: auto;
 }
 
 .linavigationtwo:last-child {
     margin-left: 50px;
-}
-
-.linavigationtwo:first-child {
-    margin-left: -40px;
 }
 
 .ulnavigationone .link:hover,
@@ -134,15 +122,11 @@ ul {
 
 /* ГЛАВНАЯ СЕКЦИЯ */
 
-.divmainsection {
+.main {
     padding-top: 200px;
     padding-bottom: 200px;
-}
-
-.main {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: var(--footer-backgroud-color)
+    background-color: var(--footer-backgroud-color);
+    text-align: center;
 }
 
 .main-title {
@@ -151,6 +135,9 @@ ul {
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Секция 2 */
@@ -195,10 +182,6 @@ ul {
 
 /* Секция 3 */
 
-.divsectionthree {
-    padding-bottom: 94px;
-}
-
 .ulsectionthree {
     display: flex;
     padding: initial;
@@ -218,45 +201,36 @@ ul {
     padding-bottom: 0;
 }
 
-.titlesectionthree {
+.title-section {
+    text-align: center;
     font-size: 36px;
     line-height: 1.16;
     font-weight: 700;
     margin-bottom: 50px;
+    color: var(--primary-text-color);
 }
 
 /* Секция 4 */
 
-.divsectionfour {
-    background-color: var(--background-section-color)
-}
-
-.ulsectionfour {
+.list {
     display: flex;
     padding: initial;
     list-style: none;
 }
 
-.lisectionfour {
+.item {
     margin-right: 30px;
     background-color: var(--background-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    text-align: center;
 }
 
-.lisectionfour:last-child {
+.item:last-child {
     margin-right: 0;
 }
 
-.titlexectionfour {
-    font-weight: 700;
-    color: var(--primary-text-color);
-    font-size: 36px;
-    line-height: 1.16;
-    margin-bottom: 50px;
-}
-
-.section .name {
+.name {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -264,7 +238,7 @@ ul {
     margin-top: 30px;
 }
 
-.section .profession {
+.profession {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -278,12 +252,10 @@ ul {
     display: flex;
     list-style: none;
     padding-left: 0;
+    margin-bottom: 50px;
+    gap: 8px;
 }
 
-.libuttonfive {
-    margin-right: 8px;
-    margin-bottom: 50px;
-}
 
 .libuttonfive:last-child {
     margin-right: 298px;
@@ -295,6 +267,9 @@ ul {
 
 /* Секция 5 (Портфолио) */
 
+.portfolio {
+    background-color: var(--background-text-color)
+}
 
 .ulfive {                    /* !!! ИДЕАЛ НАЧАЛО !!! */
     display: flex;          /* В случае изменения ширины макета меняем ширину в divfive и container, узнаем кол-во и размер отступов (формула) + плюс кол-во елементов в строке */
@@ -323,30 +298,32 @@ ul {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    padding-top:  20px;
-    border-right: 1px solid var(--border-color);
-    border-left: 1px solid var(--border-color);
+    
 }
 
 .section .kind {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
-    padding-top: 4px;
+    margin-top: 4px;
+}
+
+.border {
+    padding-top: 20px;
     padding-bottom: 20px;
-    border-right: 1px solid var(--border-color);
+    padding-left: 24px;
+    padding-right: 24px;
     border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
 
 /* ФУТЕР */
 
-.divfooter {
+.page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-top: 60px;
     background-color: var(--footer-backgroud-color);
-    text-align: left;
 }
 
 .ulfooter {
@@ -361,7 +338,7 @@ ul {
 }
 
 .lifooter:last-child{
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .addresslink {
@@ -395,6 +372,7 @@ ul {
 .contacts-footer {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    font-weight: normal;
 }
 
 /* КНОПКИ */
