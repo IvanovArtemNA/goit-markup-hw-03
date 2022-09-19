@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: var(--background-text-color);
+    background-color: #FFFFFF;
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -30,7 +30,6 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--background-section-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -212,6 +211,10 @@ header {
 
 /* Секция 4 */
 
+.team {
+    background-color: #F5F4FA;
+}
+
 .list {
     display: flex;
     padding: initial;
@@ -333,7 +336,7 @@ header {
 }
 
 .lifooter {
-    margin-bottom: 9px;
+    line-height: 24px;
     list-style: none;
 }
 
